@@ -1,0 +1,33 @@
+/* fonts */
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-corinthia {
+  font-family: "Corinthia", cursive;
+}
+
+/* colors */
+.tan {
+  color: #d2b094ff;
+}
+
+.linen {
+  color: #faf1e8ff;
+}
+
+.pale-dogwood {
+  color: #ebcec6ff;
+}
+
+.champagne-pink {
+  color: #e6d7d0ff;
+}
+
+.seashell {
+  color: #fbf1e9ff;
+}
+
+body {
+  background-color: #faf1e8ff;
+}
