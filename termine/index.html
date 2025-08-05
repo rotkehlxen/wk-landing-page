@@ -48,9 +48,12 @@
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
+      const icon = menuBtn.querySelector("i");
 
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
       });
     </script>
     <main
