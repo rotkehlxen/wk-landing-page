@@ -8,6 +8,10 @@
 }
 
 /* colors */
+:root {
+  --linen: #faf1e8ff;
+}
+
 .tan {
   color: #d2b094ff;
 }
@@ -30,4 +34,8 @@
 
 body {
   background-color: #faf1e8ff;
+}
+
+.bg-linen {
+  background-color: var(--linen);
 }
