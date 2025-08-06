@@ -19,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="w-full p-4 flex justify-end">
+    <header class="w-full flex justify-end top-0 fixed p-4 bg-linen shadow-md">
       <!-- Hamburger button (mobile only) -->
       <button
         id="menu-btn"
@@ -27,37 +27,27 @@
       >
         <i class="fa-solid fa-bars"></i>
       </button>
-
+      <!-- nav bar (non-mobile only) -->
       <nav class="hidden md:flex space-x-6 items-center text-lg font-cormorant">
         <a href="../"> <i class="fa-solid fa-house"></i></a>
         <a href="./" class="text-gray-700 hover:text-gray-900">Termine</a>
-        <a href="../laden" class="text-gray-700 hover:text-gray-900 pr-8"
+        <a href="../laden/" class="text-gray-700 hover:text-gray-900 pr-8"
           >Laden</a
         >
       </nav>
-    </header>
-    <!-- Mobile menu -->
-    <div
-      id="mobile-menu"
-      class="md:hidden hidden flex flex-col items-end space-y-2 px-4 text-lg font-cormorant"
-    >
-      <a href="../"><i class="fa-solid fa-house"></i></a>
-      <a href="./" class="text-gray-700 hover:text-gray-900">Termine</a>
-      <a href="../laden" class="text-gray-700 hover:text-gray-900">Laden</a>
-    </div>
-    <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const icon = menuBtn.querySelector("i");
 
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-      });
-    </script>
+      <!-- drop down mobile menu -->
+      <div
+        id="mobile-menu"
+        class="absolute top-full left-0 right-0 md:hidden hidden flex flex-col items-end space-y-2 text-lg font-cormorant bg-linen px-4 py-0 shadow-md"
+      >
+        <a href="../"><i class="fa-solid fa-house"></i></a>
+        <a href="./" class="text-gray-700 hover:text-gray-900">Termine</a>
+        <a href="../laden" class="text-gray-700 hover:text-gray-900">Laden</a>
+      </div>
+    </header>
     <main
-      class="min-h-screen flex flex-col items-center justify-center px-4 py-12"
+      class="min-h-screen flex flex-col items-center justify-center px-4 py-12 pt-24"
     >
       <h1 class="mb-4 font-corinthia text-7xl tan">Termine</h1>
       <!-- Grid layout for event cards -->
@@ -108,5 +98,16 @@
         </article>
       </div>
     </main>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const icon = menuBtn.querySelector("i");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      });
+    </script>
   </body>
 </html>
