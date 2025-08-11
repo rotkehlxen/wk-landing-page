@@ -39,3 +39,8 @@ body {
 .bg-linen {
   background-color: var(--linen);
 }
+
+.icon-class {
+  width: 1.5rem;
+  height: 1.5rem;
+}
