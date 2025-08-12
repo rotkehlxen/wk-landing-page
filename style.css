@@ -1,3 +1,6 @@
+/* required for compiling tailwind styles" */
+@import "tailwindcss";
+
 /* fonts */
 .font-cormorant {
   font-family: "Cormorant Garamond", serif;
