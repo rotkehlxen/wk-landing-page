@@ -1,5 +1,26 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
 @layer properties;
+@font-face {
+  font-display: swap;
+  font-family: "Corinthia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/corinthia-v13-latin-regular.woff2") format("woff2"),  url("./fonts/corinthia-v13-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/cormorant-garamond-v20-latin-regular.woff2") format("woff2"),  url("./fonts/cormorant-garamond-v20-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/cormorant-garamond-v20-latin-700.woff2") format("woff2"),  url("./fonts/cormorant-garamond-v20-latin-700.ttf") format("truetype");
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
