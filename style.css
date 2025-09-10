@@ -1,6 +1,3 @@
-/* required for compiling tailwind styles" */
-@import "tailwindcss";
-
 /* fonts - local definitions in fonts folder */
 /* corinthia-regular - latin */
 @font-face {
@@ -33,6 +30,9 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
       url("./fonts/cormorant-garamond-v20-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+
+/* required for compiling tailwind styles" */
+@import "tailwindcss";
 
 /* font classes to use */
 
